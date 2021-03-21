@@ -13,7 +13,7 @@ int main()
 
   // Doing someshit
   count = 1;
-  while (count <= n)
+  for (int i = 0; i < n; i++)
   {
     total += count;
     count++;
