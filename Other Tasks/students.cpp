@@ -43,7 +43,7 @@ float findBestAverage(Student students[]){
 // again but then its compared to the bestAverage parameter and if they are the same
 // we cout that x student has achieved the best average. Its importing to do this
 // to stop problems with multiple students achieve the best average and only displaying 1
-// studenty and not all.
+// student and not all.
 
 void findStudents(float bestAverage, Student students[]){
     cout << "The best average was: " << bestAverage << endl;
