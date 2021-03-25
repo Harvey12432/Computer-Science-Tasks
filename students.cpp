@@ -8,7 +8,7 @@ using namespace std;
 // Calculate average for all users and find what is the best average
 // Then print out all students with that average
 
-// Defining structure
+// Defining structure for student
 
 struct Student {
     int id;
