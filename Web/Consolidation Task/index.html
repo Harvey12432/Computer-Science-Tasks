@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Meter Converter</h1>
+    <img src="./img/ruler.png" height="200px" width="800px">
+    <form action="">
+        <div>
+            <label for="input">Enter your length in meters: </label>
+            <input type="text" id="input" placeholder="Enter Length">
+        </div>
+        <div>
+            <label for="unit">Pick your units: </label>
+            <select id="unit">
+                <option>Select Units</option>
+                <option value="cm">CM</option>
+                <option value="inches">Inches</option>
+                <option value="feet">Feet</option>
+                <option value="yards">Yards</option>
+                <option value="kilometers">Kilometers</option>
+                <option value="miles">Miles</option>
+            </select>
+        </div>
+        <div>
+            <label for="result">Your entered value, in <span></span> is: </label>
+            <input type="text" id="result">
+        </div>
+        <div>
+            <button id="btn">Clear</button>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
