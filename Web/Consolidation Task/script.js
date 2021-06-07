@@ -4,6 +4,7 @@ const RESULT = document.getElementById("result");
 const CLEAR = document.getElementById("btn");
 const OPTIONS = document.getElementsByTagName("option");
 const TEXTUNIT = document.getElementsByTagName("span");
+const DROPDOWN = document.getElementsByTagName("select");
 
 function controller(operation, input){
     let conversion;
@@ -31,16 +32,10 @@ function controller(operation, input){
     TEXTUNIT[0].innerText = operation;
 }
 
-
-for(let i = 0; i < OPTIONS.length; i++){
-    OPTIONS[i].addEventListener("click", function(){
-        if(!isNaN(INPUT.value)){
-            controller(OPTIONS[i].value, INPUT.value)
-        } else {
-            alert("Invalid Input, make sure your input is a number!");
-        }
-    })
-}
+console.log(DROPDOWN);
+DROPDOWN[0].addEventListener("change", function(){
+    controller(this.value, INPUT.value);
+});
 
 CLEAR.addEventListener("click", function(){
     RESULT.value = "";
