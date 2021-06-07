@@ -1,8 +1,6 @@
 const INPUT = document.getElementById("input");
-const UNIT = document.getElementById("unit");
 const RESULT = document.getElementById("result");
 const CLEAR = document.getElementById("btn");
-const OPTIONS = document.getElementsByTagName("option");
 const TEXTUNIT = document.getElementsByTagName("span");
 const DROPDOWN = document.getElementsByTagName("select");
 
